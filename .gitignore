@@ -1,0 +1,35 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv*/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data and generated reports
+backend/data/*.sqlite*
+backend/reports/*
+!backend/reports/.gitkeep
+data/samples/*
+!data/samples/README.md
+
+# Node / Next
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.*.local
+
+.DS_Store
